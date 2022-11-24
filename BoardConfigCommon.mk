@@ -122,12 +122,11 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
 KERNEL_LD := LD=ld.lld
-TARGET_KERNEL_CLANG_VERSION := WeebX
-TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-WeebX
+TARGET_KERNEL_CLANG_VERSION := zyc
 TARGET_KERNEL_ADDITIONAL_FLAGS += LLVM=1 LLVM_IAS=1
 TARGET_KERNEL_ADDITIONAL_FLAGS := LD=ld.lld AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip
 TARGET_KERNEL_ADDITIONAL_FLAGS += HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
-TARGET_KERNEL_SOURCE := kernel/xiaomi/alioth
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8250
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
