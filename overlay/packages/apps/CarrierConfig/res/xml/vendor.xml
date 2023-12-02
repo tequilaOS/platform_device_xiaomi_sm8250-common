@@ -2855,9 +2855,12 @@
     <carrier_config mcc="502" mnc="16">
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_wfc_mode_option" value="false" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="vendor_hide_volte_setting_ui" value="false" />
+        <boolean name="carrier_volte_tty_supported_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="502" mnc="18">
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
